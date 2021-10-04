@@ -4,12 +4,14 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="page-header">
         <a class="logo" href="index.html">
-            <img src="" alt="Логотип сайта Глейси Шоп">
+            <img src="img/logo.svg" width="137" height="56" alt="Логотип сайта Глейси Шоп">
         </a>
 
         <nav class="navigation">
@@ -52,7 +54,7 @@
                     <p class="slider-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным
                         джемом – это идеальный десерт для всей семьи.</p>
                     <a class="btn" href="#">Заказать</a>
-                    <img class="slider-image" src="" alt="Пломбир с клубничным джемом">
+                    <img class="slider-image" src="img/icecreem-pink.png" width="306" height="507" alt="Пломбир с клубничным джемом">
                 </li>
 
                 <li class="slider-item">
@@ -60,7 +62,7 @@
                     <p class="slider-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и
                         наслаждение даже в самый жаркий летний день.</p>
                     <a class="btn" href="#">Заказать</a>
-                    <img class="slider-image" src="" alt="Сливочное мороженое со вкусом банана">
+                    <img class="slider-image" src="img/icecreem-blue.png" width="306" height="507" alt="Сливочное мороженое со вкусом банана">
                 </li>
 
                 <li class="slider-item">
@@ -68,7 +70,7 @@
                     <p class="slider-description">Необычный сладкий дессерт с карамельный топпингом и кусочками зефира
                         завоюет сердца сладкоежек всех возрастов.</p>
                     <a class="btn" href="#">Заказать</a>
-                    <img class="slider-image" src="" alt="Карамельный пломбир с маршмеллоу">
+                    <img class="slider-image" src="img/icecreem-yellow.png" width="306" height="507" alt="Карамельный пломбир с маршмеллоу">
                 </li>
             </ul>
             <button class="slider-btn" type="button">
@@ -138,7 +140,7 @@
             <ul class="product-list">
                 <li class="product-item">
                     <a class="product-card-link" href="#">
-                        <img class="product-card-image" src="" alt="">
+                        <img class="product-card-image" src="img/catalog/catalog-1.png" width="168" height="168" alt="">
                         <h3 class="product-card-title">Малинка</h3>
                     </a>
                     <p class="product-card-description">Сливочное мороженое с малиновым джемом</p>
@@ -150,7 +152,7 @@
 
                 <li class="product-item">
                     <a class="product-card-link" href="#">
-                        <img class="product-card-image" src="" alt="">
+                        <img class="product-card-image" src="img/catalog/catalog-2.png" width="168" height="168" alt="">
                         <h3 class="product-card-title">Фисташка</h3>
                     </a>
                     <p class="product-card-description">Фисташковый пломбир с кусочками шоколада</p>
@@ -162,7 +164,7 @@
 
                 <li class="product-item">
                     <a class="product-card-link" href="#">
-                        <img class="product-card-image" src="" alt="">
+                        <img class="product-card-image" src="img/catalog/catalog-3.png" width="168" height="168" alt="">
                         <h3 class="product-card-title">Черника</h3>
                     </a>
                     <p class="product-card-description">Крем-брюле с черничным джемом</p>
@@ -174,7 +176,7 @@
 
                 <li class="product-item">
                     <a class="product-card-link" href="#">
-                        <img class="product-card-image" src="" alt="">
+                        <img class="product-card-image" src="img/catalog/catalog-4.png" width="168" height="168" alt="">
                         <h3 class="product-card-title">Бабл-гам</h3>
                     </a>
                     <p class="product-card-description">Ванильный пломбир со сладкой посыпкой</p>
@@ -187,26 +189,28 @@
         </section>
 
         <section class="advantages">
-            <h2 class="advantages-title">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного
-                проиводства на развес</h2>
-            <ul class="advantages-list">
-                <li class="advantages-item">
-                    <p class="advantages-description">Все наше мороженое изгатавливается на собственном производстве, с
-                        использованием современного оборудования и проверенных временем технологий.</p>
-                </li>
-                <li class="advantages-item">
-                    <p class="advantages-description">Для приготовления мороженого используются сливки и молоко
-                        высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</p>
-                </li>
-                <li class="advantages-item">
-                    <p class="advantages-description">Закупка ингредиентов производится только у проверенных фермерских
-                        хозяйств, с которыми нас связывает долговременное сотрудничество.</p>
-                </li>
-                <li class="advantages-item">
-                    <p class="advantages-description">Доставка нашего мороженого осуществляется в специальном термопаке,
-                        который не дает мороженому растаять и позволяет сохранить превосходный вкус.</p>
-                </li>
-            </ul>
+            <div class="advantages-inner">
+                <h2 class="advantages-title">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного
+                    проиводства на развес</h2>
+                <ul class="advantages-list">
+                    <li class="advantages-item">
+                        <p class="advantages-description">Все наше мороженое изгатавливается на собственном производстве, с
+                            использованием современного оборудования и проверенных временем технологий.</p>
+                    </li>
+                    <li class="advantages-item">
+                        <p class="advantages-description">Для приготовления мороженого используются сливки и молоко
+                            высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</p>
+                    </li>
+                    <li class="advantages-item">
+                        <p class="advantages-description">Закупка ингредиентов производится только у проверенных фермерских
+                            хозяйств, с которыми нас связывает долговременное сотрудничество.</p>
+                    </li>
+                    <li class="advantages-item">
+                        <p class="advantages-description">Доставка нашего мороженого осуществляется в специальном термопаке,
+                            который не дает мороженому растаять и позволяет сохранить превосходный вкус.</p>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <div class="news">
@@ -300,7 +304,7 @@
 
         <div class="copyright">
             <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-                <img class="copyright-logo" src="" alt="Логотип HTML академии">
+                <img class="copyright-logo" src="img/logo-htmlacademy.png" width="93" height="27" alt="Логотип HTML академии">
             </a>
             <p>Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a> &copy; 2021</p>
         </div>

@@ -1,0 +1,50 @@
+body {
+    background-color: #FEAFC3;
+}
+
+.gifts-item:first-child {
+    background-image: url("img/raspberry.png");
+}
+
+.gifts-item:last-child {
+    background-image: url(img/marshmallows.png);
+}
+
+.gifts-item {
+    background-repeat: no-repeat;
+    background-size: 570px 268px;
+}
+
+.product-item {
+    background-color: #FCFCFC;
+}
+
+.advantages {
+    background-image: url("img/waffle-back.png");
+    background-repeat: no-repeat;
+    background-size: 1170px 480px;
+}
+
+.news {
+    background-image: url("img/news-back.jpg");
+    background-repeat: no-repeat;
+    background-size: 570px 216px;
+}
+
+.subs {
+    background-image: url("img/post-office-back.png");
+    background-repeat: no-repeat;
+    background-size: 570px 220px;
+}
+
+.order {
+    background-image: url("img/form-back.jpg");
+    background-repeat: no-repeat;
+    background-size: 1170px 534px;
+}
+
+.contacts {
+    background-image: url("img/address-back.jpg");
+    background-repeat: no-repeat;
+    background-size: 1170px 492px;
+}
