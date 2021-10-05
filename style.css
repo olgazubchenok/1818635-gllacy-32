@@ -7,7 +7,7 @@ body {
 }
 
 .gifts-item:last-child {
-    background-image: url(img/marshmallows.png);
+    background-image: url("img/marshmallows.png");
 }
 
 .gifts-item {
@@ -15,12 +15,8 @@ body {
     background-size: 570px 268px;
 }
 
-.product-item {
-    background-color: #FCFCFC;
-}
-
 .advantages {
-    background-image: url("img/waffle-back.png");
+    background-image: url("img/waffle-back.jpg");
     background-repeat: no-repeat;
     background-size: 1170px 480px;
 }
@@ -32,7 +28,7 @@ body {
 }
 
 .subs {
-    background-image: url("img/post-office-back.png");
+    background-image: url("img/post-office-back.jpg");
     background-repeat: no-repeat;
     background-size: 570px 220px;
 }
