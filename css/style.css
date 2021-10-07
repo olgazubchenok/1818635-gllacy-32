@@ -1,0 +1,375 @@
+@font-face {
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/inter-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/inter-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/inter-900.woff2") format("woff2");
+    font-display: swap;
+}
+
+
+body {
+    font-family: "inter", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #2D3440;
+    background-color: #FEAFC3;
+}
+
+.btn {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #2D3440;
+    background-color: #FCFCFC;
+}
+
+.btn-pink {
+    color: #FCFCFC;
+    background-color: #FF2F64;
+}
+
+.btn-light-pink {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+
+    background-color: rgba(252, 252, 252, 0.3);
+}
+
+/* Шапка */
+.page-header {
+    line-height: 20px;
+}
+
+.navigation-link {
+    color: #2D3440;
+    text-decoration: none;
+}
+
+.navigation-user a {
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #2D3440;
+    text-decoration: none;
+}
+
+.phone {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+/* Промо */
+.slider-title {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 46px;
+}
+
+.slider-description {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+
+/* Подарки */
+.gifts-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+
+    text-align: center;
+}
+
+.gift-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.gifts-item:first-child {
+    background-image: url("../img/raspberry.png");
+}
+
+.gifts-item:last-child {
+    background-image: url("../img/marshmallows.png");
+}
+
+.gifts-item {
+    background-repeat: no-repeat;
+    background-size: 570px 268px;
+
+    background-color: #FF7799;
+}
+
+
+/* Товары */
+.product-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+
+    text-align: center;
+}
+
+.product-item {
+    text-align: center;
+
+    background-color: #FCFCFC;
+}
+
+.product-card-link {
+    text-decoration: none;
+}
+
+.product-card-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #2D3440;
+}
+
+.product-card-description {
+    color: #565C66;
+}
+
+.product-card-price {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+
+/* Преимущества */
+.advantages {
+    background-image: url("../img/waffle-back.jpg");
+    background-repeat: no-repeat;
+    background-size: 1170px 480px;
+}
+
+.advantages-inner {
+    background-color: #FCFCFC;
+}
+
+.advantages-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+
+    text-align: center;
+}
+
+.advantages-description {
+    color: #565C66;
+}
+
+
+/* Новости */
+.news {
+    background-image: url("../img/news-back.jpg");
+    background-repeat: no-repeat;
+    background-size: 570px 216px;
+}
+
+.news-title {
+    font-weight: normal;
+    line-height: 20px;
+
+    color: #565C66;
+}
+
+.news-description {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+
+    color: #2D3440;
+}
+
+
+/* Подписка */
+.subs {
+    background-image: url("../img/post-office-back.jpg");
+    background-repeat: no-repeat;
+    background-size: 570px 220px;
+}
+
+.subs-description {
+    color: #565C66;
+}
+
+.subs-inner {
+    background-color: #FCFCFC;
+}
+
+
+/* Форма заказа */
+.order {
+    background-image: url("../img/form-back.jpg");
+    background-repeat: no-repeat;
+    background-size: 1170px 534px;
+}
+
+.order-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+}
+
+.order-description {
+    color: #565C66;
+}
+
+.order-form {
+    background-color: #FCFCFC;
+}
+
+.order-form-description {
+    color: #565C66;
+}
+
+.order-label {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+/* Контакты */
+.contacts {
+    background-image: url("../img/address-back.jpg");
+    background-repeat: no-repeat;
+    background-size: 1170px 492px;
+}
+
+.contacts-inner {
+    background-color: #FCFCFC;
+}
+
+.contacts-address-title {
+    font-weight: normal;
+
+    color: #565C66;
+}
+
+.contacts-address-text {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.contacts-phone {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #2D3440;
+}
+
+.contacts-address p {
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #565C66;
+}
+
+
+/* Страница каталога */
+.pagination-link {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #2D3440;
+}
+
+.pagination-current {
+    text-decoration: none;
+}
+
+.page-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+}
+
+.more-link {
+    font-size: 16px;
+    line-height: 20px;
+
+    text-decoration: none;
+    color: #2D3440;
+}
+
+.current-more {
+    background-color: #FCFCFC;
+}
+
+
+/* Форма страницы каталога */
+.catalog-filter-title {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.control-label {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.range-toggle {
+    text-align: center;
+    
+    color: #FCFCFC;
+    background-color: #2D3440;
+}
+
+/* Подвал */
+.suppliers span {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.suppliers-info {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;  
+
+    color: #2D3440;
+}
+
+.copyright {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.htmlacademy-link {
+    color: #2D3440;
+}
