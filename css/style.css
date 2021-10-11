@@ -22,15 +22,39 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
 
 body {
     font-family: "inter", sans-serif;
     font-size: 16px;
     line-height: 22px;
 
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+    margin: 0;
+
     color: #2D3440;
     background-color: #FEAFC3;
 }
+
+ol, 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.main-container {
+    flex-grow: 1;
+  }
 
 .btn {
     font-family: inherit;
@@ -64,9 +88,30 @@ body {
     line-height: 20px;
 }
 
+.page-header .wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigation {
+    display: flex;
+
+    width: 1000px;
+    margin-left: auto;
+}
+
+.navigation-list {
+    width: 400px;
+}
+
 .navigation-link {
     color: #2D3440;
     text-decoration: none;
+}
+
+.navigation-user {
+    max-width: 420px;
+    margin-left: auto;
 }
 
 .navigation-user a {
@@ -88,11 +133,29 @@ body {
     font-weight: 900;
     font-size: 36px;
     line-height: 46px;
+
+    width: 470px;
 }
 
 .slider-description {
     font-size: 18px;
     line-height: 24px;
+
+    width: 414px;
+}
+
+.slider-item {
+    display: flex;
+}
+
+.slider-navigation {
+    display: flex;
+}
+
+.social-list {
+    margin-left: auto;
+
+    width: 104px;
 }
 
 
@@ -111,12 +174,18 @@ body {
     line-height: 30px;
 }
 
+.gifts-list {
+    display: flex;
+}
+
 .gifts-item:first-child {
     background-image: url("../img/raspberry.png");
 }
 
 .gifts-item:last-child {
     background-image: url("../img/marshmallows.png");
+
+    margin-left: auto;
 }
 
 .gifts-item {
@@ -124,6 +193,8 @@ body {
     background-size: 570px 268px;
 
     background-color: #FF7799;
+
+    width: 570px;
 }
 
 
@@ -136,8 +207,15 @@ body {
     text-align: center;
 }
 
+.product-list {
+    display: flex;
+    justify-content: space-between;
+}
+
 .product-item {
     text-align: center;
+
+    width: 270px;
 
     background-color: #FCFCFC;
 }
@@ -190,7 +268,13 @@ body {
 
 
 /* Новости */
+.info-row {
+    display: flex;
+}
+
 .news {
+    width: 570px;
+
     background-image: url("../img/news-back.jpg");
     background-repeat: no-repeat;
     background-size: 570px 216px;
@@ -214,6 +298,10 @@ body {
 
 /* Подписка */
 .subs {
+    width: 570px;
+
+    margin-left: auto;
+
     background-image: url("../img/post-office-back.jpg");
     background-repeat: no-repeat;
     background-size: 570px 220px;
@@ -230,6 +318,7 @@ body {
 
 /* Форма заказа */
 .order {
+    display: flex;
     background-image: url("../img/form-back.jpg");
     background-repeat: no-repeat;
     background-size: 1170px 534px;
@@ -246,6 +335,8 @@ body {
 }
 
 .order-form {
+    width: 500px;
+
     background-color: #FCFCFC;
 }
 
@@ -268,6 +359,8 @@ body {
 }
 
 .contacts-inner {
+    width: 346px;
+
     background-color: #FCFCFC;
 }
 
@@ -351,6 +444,31 @@ body {
 }
 
 /* Подвал */
+.page-footer .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.suppliers {
+    display: flex;
+    justify-content: space-between;
+
+    width: 332px;
+}
+
+.suppliers-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.suppliers-col:first-child {
+    width: 126px;
+}
+
+.suppliers-col:last-child {
+    width: 185px;
+}
+
 .suppliers span {
     font-weight: bold;
     font-size: 14px;
