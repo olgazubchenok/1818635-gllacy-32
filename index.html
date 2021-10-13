@@ -29,15 +29,15 @@
                 </ul>
 
                 <div class="navigation-list navigation-user">
-                        <a class="phone" href="tel:88005558628">+7 800 555-86-28</a>
+                        <a class="phone navigation-link" href="tel:88005558628">+7 800 555-86-28</a>
                     
-                        <a class="search btn-light-pink" href="#">
+                        <a class="search btn-light-pink navigation-link" href="#">
                             <span class="visually-hidden">Поиск</span>
                         </a>
                     
-                        <a class="entrance btn-light-pink" href="#">Вход</a>
+                        <a class="entrance btn-light-pink navigation-link" href="#">Вход</a>
                     
-                        <a class="cart btn-light-pink" href="#">Пусто</a>
+                        <a class="cart btn-light-pink navigation-link" href="#">Пусто</a>
                 </div>
             </nav>
         </div>
@@ -209,12 +209,12 @@
                                 использованием современного оборудования и проверенных временем технологий.</p>
                         </li>
                         <li class="advantages-item">
-                            <p class="advantages-description">Для приготовления мороженого используются сливки и молоко
-                                высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</p>
-                        </li>
-                        <li class="advantages-item">
                             <p class="advantages-description">Закупка ингредиентов производится только у проверенных фермерских
                                 хозяйств, с которыми нас связывает долговременное сотрудничество.</p>
+                        </li>
+                        <li class="advantages-item">
+                            <p class="advantages-description">Для приготовления мороженого используются сливки и молоко
+                                высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</p>
                         </li>
                         <li class="advantages-item">
                             <p class="advantages-description">Доставка нашего мороженого осуществляется в специальном термопаке,
@@ -236,9 +236,8 @@
                         <p class="subs-description">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого
                         вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                         <form class="subs-form" action="https://echo.htmlacademy.ru/" method="post">
-                            <label class="visually-hidden">Email:
-                                <input type="text" name="subs-email" placeholder="email@example.com">
-                            </label>
+                            <label class="visually-hidden" for="sub-email">Email:</label>
+                                <input type="text" name="subs-email" id="sub-email" placeholder="email@example.com">
                             <button class="btn btn-pink" type="submit">Отправить</button>
                         </form>
                     </div>
