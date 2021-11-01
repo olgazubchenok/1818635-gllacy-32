@@ -172,13 +172,11 @@ body {
 .navigation-link {
     display: block;
 
-    padding: 8px 12px;
+    padding: 8px 14px;
 
     color: #2D3440;
     text-decoration: none;
     border-radius: 26px;
-    border: 2px solid #FEAFC3;
-    outline: none;
 }
 
 .navigation-link:hover {
@@ -187,7 +185,7 @@ body {
 
 .navigation-link:focus {
     background-color: rgba(252, 252, 252, 0.4);
-    border: 2px solid #2D3440;
+    outline: 2px solid #2D3440;
 }
 
 .navigation-link:active {
@@ -215,7 +213,6 @@ body {
     text-decoration: none;
     background-color: rgba(252, 252, 252, 0.3);
     border-radius: 26px;
-    outline: none;
 }
 
 .navigation-user .navigation-link:not(:last-child) {
@@ -228,7 +225,7 @@ body {
 
 .navigation-user .navigation-link:focus {
     background-color: rgba(252, 252, 252, 0.4);
-    border: 2px solid #2D3440;
+    outline: 2px solid #2D3440;
 }
 
 .navigation-user .navigation-link:active {
@@ -241,7 +238,6 @@ body {
 
     margin-right: 18px;
     background-color: #FEAFC3;
-    border: 2px solid #FEAFC3;
 }
 
 .search.navigation-link {
@@ -249,7 +245,6 @@ body {
     height: 32px;
 
     padding: 0;
-    border: 2px solid #FEAFC3;
 }
 
 .navigation-link-login {
