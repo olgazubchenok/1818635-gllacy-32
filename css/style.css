@@ -172,11 +172,12 @@ body {
 .navigation-link {
     display: block;
 
-    padding: 8px 16px;
+    padding: 8px 12px;
 
     color: #2D3440;
     text-decoration: none;
     border-radius: 26px;
+    border: 2px solid #FEAFC3;
     outline: none;
 }
 
@@ -187,7 +188,6 @@ body {
 .navigation-link:focus {
     background-color: rgba(252, 252, 252, 0.4);
     border: 2px solid #2D3440;
-    box-sizing: border-box;
 }
 
 .navigation-link:active {
@@ -241,6 +241,7 @@ body {
 
     margin-right: 18px;
     background-color: #FEAFC3;
+    border: 2px solid #FEAFC3;
 }
 
 .search.navigation-link {
@@ -248,6 +249,7 @@ body {
     height: 32px;
 
     padding: 0;
+    border: 2px solid #FEAFC3;
 }
 
 .navigation-link-login {
@@ -461,7 +463,7 @@ body {
 .vk-btn {
     height: 24px;
     width: 24px;
-    background-image: url('../img/icon/vk.svg');
+    background-image: url("../img/icon/vk.svg");
     background-repeat: no-repeat;
     background-size: 24px 24px;
     background-position: center;
@@ -470,7 +472,7 @@ body {
 .fb-btn {
     height: 24px;
     width: 24px;
-    background-image: url('../img/icon/facebook.svg');
+    background-image: url("../img/icon/facebook.svg");
     background-repeat: no-repeat;
     background-size: 24px 24px;
     background-position: center;
@@ -479,12 +481,11 @@ body {
 .inst-btn {
     height: 24px;
     width: 24px;
-    background-image: url('../img/icon/instagram.svg');
+    background-image: url("../img/icon/instagram.svg");
     background-repeat: no-repeat;
     background-size: 24px 24px;
     background-position: center;
 }
-
 
 /* Подарки */
 .gifts {
@@ -768,7 +769,7 @@ body {
     width: 48px;
     height: 48px;
 
-    background-image: url('../img/icon/ice-cream.svg');
+    background-image: url("../img/icon/ice-cream.svg");
     background-repeat: no-repeat;
     background-size: 48px 48px;
 }
@@ -784,7 +785,7 @@ body {
     width: 48px;
     height: 48px;
 
-    background-image: url('../img/icon/cow.svg');
+    background-image: url("../img/icon/cow.svg");
     background-repeat: no-repeat;
     background-size: 48px 48px;
 }
@@ -800,7 +801,7 @@ body {
     width: 48px;
     height: 48px;
 
-    background-image: url('../img/icon/leaf.svg');
+    background-image: url("../img/icon/leaf.svg");
     background-repeat: no-repeat;
     background-size: 48px 48px;
 }
@@ -816,7 +817,7 @@ body {
     width: 48px;
     height: 48px;
 
-    background-image: url('../img/icon/thermometer.svg');
+    background-image: url("../img/icon/thermometer.svg");
     background-repeat: no-repeat;
     background-size: 48px 48px;
 }
@@ -1039,34 +1040,24 @@ body {
     outline: none;
 }
 
-.order-date input:hover,
-.order-phone input:hover,
-.order-adress input:hover {
+.order-form input:hover {
     border: 1px solid #2D3440;
     cursor: pointer;
 }
 
-.order-date input:focus,
-.order-phone input:focus,
-.order-adress input:focus {
+.order-form input:focus {
     border: 2px solid #2D3440;
 }
 
-.order-date input:invalid,
-.order-phone input:invalid,
-.order-adress input:invalid {
+.order-form input:invalid {
     border: 1px solid #EA5454;
 }
 
-.order-date input:invalid:hover,
-.order-phone input:invalid:hover,
-.order-adress input:invalid:hover {
+.order-form input:invalid:hover {
     border: 2px solid #EA5454;
 }
 
-.order-date input:disabled,
-.order-phone input:disabled,
-.order-adress input:disabled {
+.order-form input:disabled {
     background: #E7E7E7;
     border: 1px solid #B9B9B9;
 }
@@ -1081,16 +1072,6 @@ body {
     border: none;
     background-color: inherit;
     outline: none;
-}
-
-
-.info-icon {
-    width: 14px;
-    height: 14px;
-
-    background-image: url(../img/icon/info.svg);
-    background-repeat: no-repeat;
-    background-size: 14px 14px;
 }
 
 .order-form .btn {
@@ -1353,7 +1334,7 @@ span.suppliers-info::before {
     width: 16px;
     height: 16px;
 
-    background-image: url(../img/icon/heart-fill.svg);
+    background-image: url("../img/icon/heart-fill.svg");
     background-repeat: no-repeat;
 }
 
