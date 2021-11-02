@@ -192,6 +192,10 @@ body {
     background: #FCFCFC;
 }
 
+.navigation-link.current {
+    background: #FF4A78;
+}
+
 .navigation-user {
     margin-left: auto;
 
@@ -594,9 +598,14 @@ body {
     text-align: center;
 
     width: 270px;
+    margin-bottom: 61px;
 
     background-color: #FCFCFC;
     border-radius: 8px;
+}
+
+.product-item-last {
+    margin-bottom: 0;
 }
 
 .product-card-link {
@@ -1158,14 +1167,28 @@ body {
 
 .pagination-item:not(:last-child) {
     margin-right: 28px;
+    position: relative;
 }
 
 .pagination-link {
     font-weight: bold;
     font-size: 14px;
     line-height: 20px;
+    border-radius: 26px;
 
     color: #2D3440;
+}
+
+.pagination-link::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -16px;
+
+    background-image: url("../img/icon/chevrons-right.svg");
+    background-position: center;
+    height: 6px;
+    width: 7px;
 }
 
 .pagination-current {
@@ -1182,24 +1205,27 @@ body {
 }
 
 .more {
-    display: flex;
+    display: grid;
+    grid-template-columns: 194px auto 187px auto 194px;
+    grid-template-rows: 52px;
 }
 
 .more-list {
+    grid-column: 5 / -1;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 
-    margin: 0;
     padding: 0;
 
     list-style-type: none;
 }
 
-.more-item {
-    margin-right: 16px;
-}
-
 .more .btn {
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 3 / 4;
 }
 
 .more-link {
@@ -1208,11 +1234,56 @@ body {
 
     text-decoration: none;
     color: #2D3440;
+    width: 24px;
+    height: 24px;
+    padding: 2px 8px;
+    outline: none;
+    cursor: pointer;
 }
 
 .current-more {
+    display: inline-block;
+    box-sizing: border-box;
     background-color: #FCFCFC;
+    border-radius: 50%;
 }
+
+.more-link:hover:not(.current-more) {
+    background: rgba(252, 252, 252, 0.3);
+    border: 1px solid #FCFCFC;
+    border-radius: 50%;
+    padding: 1px 7px;
+}
+
+.more-link:focus:not(.current-more) {
+    background: rgba(252, 252, 252, 0.3);
+    border: 1px solid #2D3440;
+    border-radius: 50%;
+    padding: 1px 7px;
+}
+
+.first-link-current path{
+    fill: rgba(45, 52, 64, 0.2);
+}
+
+.more-item:first-child {
+    padding-right: 16px;
+}
+
+.more-item:last-child {
+    padding-left: 16px;
+}
+
+.more-link-nav {
+    width: 16px;
+    height: 16px;
+}
+
+.more-icon {
+    margin: auto 0;
+}
+
+
 
 
 /* Форма страницы каталога */
@@ -1225,6 +1296,23 @@ body {
 .catalog-filter-group {
     padding: 0;
     margin: 0;
+
+    border: none;
+}
+
+.catalog-filter-title {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 8px;
+    margin-left: 16px;
+}
+
+.select-control {
+    background-color: rgba(252, 252, 252, 0.3);
+    width: 100%;
+    height: 36px;
+    border: none;
+    border-radius: 20px;
 }
 
 .catalog-filter-list {
@@ -1236,6 +1324,35 @@ body {
     list-style-type: none;
 }
 
+.price {
+    position: relative;
+}
+
+.price .catalog-filter-input {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: inherit;
+
+    width: 30px;
+    padding: 2px;
+    border: none;
+    background-color: inherit;
+}
+
+.input-group {
+    position: absolute;
+    top: -32px;
+    right: 35px;
+}
+
+.range-toggle {
+    text-align: center;
+}
+
 .fat {
     grid-column: 3/-1;
 }
@@ -1244,21 +1361,39 @@ body {
     grid-column: 1/4;
 }
 
-.catalog-filter-title {
+.control-title {
     font-size: 14px;
     line-height: 20px;
 }
 
-.control-label {
-    font-size: 14px;
-    line-height: 20px;
+.catalog-filter-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+
+    background-color: rgba(252, 252, 252, 0.3);
+    border-radius: 20px;
 }
 
-.range-toggle {
-    text-align: center;
-    
-    color: #FCFCFC;
-    background-color: #2D3440;
+.catalog-filter-item {
+    padding-left: 24px;
+}
+
+.grid-row{
+    display: grid;
+    grid-template-rows: auto 38px;
+}
+
+.catalog-filter-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: 2 / -1;
+    background: rgba(252, 252, 252, 0.3);
+    border: 2px solid #FCFCFC;
+    border-radius: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 /* Подвал */
