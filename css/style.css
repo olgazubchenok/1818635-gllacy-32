@@ -244,6 +244,18 @@ body {
     background-color: #FEAFC3;
 }
 
+.entrance {
+    background-image: url("../img/icon/log-in.svg");
+    background-repeat: no-repeat;
+    background-position: 25% center;
+}
+
+.search {
+    background-image: url("../img/icon/search.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .search.navigation-link {
     width: 32px;
     height: 32px;
@@ -263,10 +275,6 @@ body {
     left: 16px;
 
     margin: auto 0;
-}
-
-.search .navigation-icon {
-    left: 7px;
 }
 
 
@@ -449,19 +457,27 @@ body {
     outline: none;
 }
 
-.social-btn:hover {
-    background: #2D3440;
-    border: 2px solid rgba(252, 252, 252, 0.2);
-}
-
-.social-btn:focus {
-    background: #2D3440;
-    border: 2px solid #2D3440;
-}
-
 .vk-btn {
     height: 24px;
     width: 24px;
+    background-image: url("../img/icon/vk.svg");
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: center;
+}
+
+.vk-btn:hover {
+    background: #2D3440;
+    border: 2px solid rgba(252, 252, 252, 0.2);
+    background-image: url("../img/icon/vk.svg");
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: center;
+}
+
+.vk-btn:focus {
+    background: #2D3440;
+    border: 2px solid #2D3440;
     background-image: url("../img/icon/vk.svg");
     background-repeat: no-repeat;
     background-size: 24px 24px;
@@ -477,6 +493,24 @@ body {
     background-position: center;
 }
 
+.fb-btn:hover {
+    background: #2D3440;
+    border: 2px solid rgba(252, 252, 252, 0.2);
+    background-image: url("../img/icon/facebook.svg");
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: center;
+}
+
+.fb-btn:focus {
+    background: #2D3440;
+    border: 2px solid #2D3440;
+    background-image: url("../img/icon/facebook.svg");
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: center;
+}
+
 .inst-btn {
     height: 24px;
     width: 24px;
@@ -485,6 +519,27 @@ body {
     background-size: 24px 24px;
     background-position: center;
 }
+
+.inst-btn:hover {
+    background: #2D3440;
+    border: 2px solid rgba(252, 252, 252, 0.2);
+    background-image: url("../img/icon/instagram.svg");
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: center;
+}
+
+.inst-btn:focus {
+    background: #2D3440;
+    border: 2px solid #2D3440;
+    background-image: url("../img/icon/instagram.svg");
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: center;
+}
+
+
+
 
 /* Подарки */
 .gifts {
