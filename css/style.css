@@ -2280,6 +2280,10 @@ span.suppliers-info::before {
     z-index: 2;
 }
 
+.modal-container-close {
+    display: none;
+}
+
 .modal {
     position: relative;
     margin: auto;
