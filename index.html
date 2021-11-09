@@ -19,6 +19,27 @@
                 <ul class="navigation-list">
                     <li class="navigation-item">
                         <a class="navigation-link" href="catalog.html">Каталог</a>
+                        <div class="popover popover-catalog hidden-element">
+                            <div class="popover-catalog-content">
+                                <span class="popover-new-icecreem">
+                                    <a class="popover-new-icecreem-link" href="#">
+                                        Новинки</a></span>
+                                <ul class="popover-catalog-list">
+                                    <li class="popover-catalog-item">
+                                        <a class="popover-catalog-link" href="#">
+                                            Сливочное</a></li>
+                                    <li class="popover-catalog-item">
+                                        <a class="popover-catalog-link" href="#">
+                                            Щербеты</a></li>
+                                    <li class="popover-catalog-item">
+                                        <a class="popover-catalog-link" href="#">
+                                            Фруктовый лед</a></li>
+                                    <li class="popover-catalog-item">
+                                        <a class="popover-catalog-link" href="#">
+                                            Мелорин</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </li>
                     <li class="navigation-item">
                         <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -31,23 +52,59 @@
                 <div class="navigation-list navigation-user">
                     <a class="phone navigation-link" href="tel:88005558628">+7 800 555-86-28</a>
 
-                    <a class="search btn-light-pink navigation-link" href="#">
-                        <span class="visually-hidden">Поиск</span>
-                    </a>
+                    <div class="popover-group">
+                        <a class="search btn-light-pink navigation-link" href="#">
+                            <span class="visually-hidden">Поиск</span>
+                        </a>
+                        <div class="popover popover-search hidden-element">
+                            <form class="popover-search-form" action="https://echo.htmlacademy.ru/" method="post">
+                                <label class="popover-search-label visually-hidden" for="popover-search">Поиск по сайту</label>
+                                <input type="text" id="popover-search" name="popover-search" placeholder="Поиск по сайту">
+                                <button class="popover-search-btn">
+                                    <svg class="popover-search-btn-icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12.8 4.14a.67.67 0 1 0-.94-.94L8 7.06 4.14 3.2a.67.67 0 1 0-.94.94L7.06 8 3.2 11.86a.67.67 0 1 0 .94.94L8 8.94l3.86 3.86a.67.67 0 1 0 .94-.94L8.94 8l3.86-3.86Z"
+                                            fill="#2D3440" />
+                                    </svg>
+                                    <span class="visually-hidden">Стереть текст из поля</span></button>
+                            </form>
+                        </div>
+                    </div>
 
-                    <a class="entrance btn-light-pink navigation-link" href="#">
-                        <span class="navigation-link-login">Вход</span>
-                    </a>
+                    <div class="popover-group">
+                        <a class="entrance btn-light-pink navigation-link" href="#">
+                            <span class="navigation-link-login">Вход</span>
+                        </a>
+                        <div class="popover popover-entrance hidden-element">
+                            <h2 class="entrance-title">Личный кабинет</h2>
+                            <form class="popover-entrance-form" action="https://echo.htmlacademy.ru/" method="post">
+                                <label class="popover-entrance-label visually-hidden" for="popover-entrance-email">Email</label>
+                                <input type="email" id="popover-entrance-email" name="popover-entrance-email" placeholder="email@example.com" required>
+                                <label class="popover-entrance-label visually-hidden" for="popover-entrance-password">Пароль</label>
+                                <input type="password" id="popover-entrance-password" name="popover-entrance-password" required>
+                                <button class="btn btn-pink popover-entrance-btn" type="submit">Войти</button>
+                                <div class="entrance-link-group">
+                                    <a class="entrance-link" href="">Забыли пароль?</a>
+                                    <a class="entrance-link" href="">Регистрация</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
 
-                    <a class="cart navigation-link" href="#">
-                        <svg class="navigation-icon" aria-hidden="true" focusable="false" width="18" height="18"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
-                                fill="#2D3440" />
-                        </svg>
-                        <span class="navigation-link-login">Пусто</span>
-                    </a>
+                    <div class="popover-group">
+                        <a class="cart navigation-link" href="#">
+                            <svg class="navigation-icon" aria-hidden="true" focusable="false" width="18" height="18"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                                    fill="#2D3440" />
+                            </svg>
+                            <span class="navigation-link-login">Пусто</span>
+                        </a>
+                        <div class="popover popover-cart hidden-element">
+                            <h2 class="cart-title cart-title-empty">Ваша корзина пока пуста</h2>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -58,28 +115,19 @@
             <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
 
             <section class="slider">
-                <button class="control" type="button">
-                    <svg class="slider-icon" aria-hidden="true" focusable="false" width="16" height="16" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M9.8 3.8a.66.66 0 1 0-.94-.94L4.2 7.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L5.6 8l4.2-4.2Z"
-                            fill="#FCFCFC" />
-                    </svg>
-                    <span class="visually-hidden">Назад</span>
-                </button>
                 <ul class="slider-list">
-                    <li class="slider-item">
+                    <li class="slider-item strawberry-icecream">
                         <div class="slider-container">
                             <h2 class="slider-title">Нежный пломбир с клубничным джемом</h2>
                             <p class="slider-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим
                                 клубничным джемом – это идеальный десерт для всей семьи.</p>
                             <a class="btn" href="#">Заказать</a>
                         </div>
-                        <img class="slider-image" src="img/icecreem-pink.png" width="306" height="507"
+                        <img class="slider-img" src="img/icecreem-pink.png" width="306" height="507"
                             alt="Пломбир с клубничным джемом">
                     </li>
 
-                    <li class="slider-item">
+                    <li class="slider-item banana-icecream visually-hidden">
                         <div class="slider-container">
                             <h2 class="slider-title">Сливочное мороженое со вкусом банана</h2>
                             <p class="slider-description">Сливочное мороженое с ярким банановым вкусом подарит вам
@@ -87,11 +135,11 @@
                                 наслаждение даже в самый жаркий летний день.</p>
                             <a class="btn" href="#">Заказать</a>
                         </div>
-                        <img class="slider-image" src="img/icecreem-blue.png" width="306" height="507"
+                        <img class="slider-img" src="img/icecreem-blue.png" width="306" height="507"
                             alt="Сливочное мороженое со вкусом банана">
                     </li>
 
-                    <li class="slider-item">
+                    <li class="slider-item caramel-icecream visually-hidden">
                         <div class="slider-container">
                             <h2 class="slider-title">Карамельный пломбир с маршмеллоу</h2>
                             <p class="slider-description">Необычный сладкий дессерт с карамельный топпингом и кусочками
@@ -99,24 +147,36 @@
                                 завоюет сердца сладкоежек всех возрастов.</p>
                             <a class="btn" href="#">Заказать</a>
                         </div>
-                        <img class="slider-image" src="img/icecreem-yellow.png" width="306" height="507"
+                        <img class="slider-img" src="img/icecreem-yellow.png" width="306" height="507"
                             alt="Карамельный пломбир с маршмеллоу">
                     </li>
                 </ul>
-                <button class="control btn" type="button">
-                    <svg class="slider-icon" aria-hidden="true" focusable="false" width="16" height="16" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z"
-                            fill="#FCFCFC" />
-                    </svg>
-                    <span class="visually-hidden">Вперед</span>
-                </button>
+
+                <div class="slider-controls">
+                    <button class="control btn slider-prev" type="button">
+                        <svg class="slider-icon" aria-hidden="true" focusable="false" width="16" height="16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M9.8 3.8a.66.66 0 1 0-.94-.94L4.2 7.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L5.6 8l4.2-4.2Z"
+                                fill="#FCFCFC" />
+                        </svg>
+                        <span class="visually-hidden">Назад</span>
+                    </button>
+                    <button class="control btn slider-next" type="button">
+                        <svg class="slider-icon" aria-hidden="true" focusable="false" width="16" height="16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z"
+                                fill="#FCFCFC" />
+                        </svg>
+                        <span class="visually-hidden">Вперед</span>
+                    </button>
+                </div>
 
                 <div class="slider-navigation">
                     <ol class="page-list">
                         <li class="page-item">
-                            <a class="page-btn current" href="#">
+                            <a class="page-btn page-btn-current" href="#">
                                 <span class="visually-hidden">Первая страница</span>
                             </a>
                         </li>
@@ -314,7 +374,7 @@
                         подтвердить заказ.</p>
 
                     <div class="order-date">
-                        <label class="order-label" for="order-date">
+                        <label class="order-label label-icon" for="order-date">
                             Дата
                             <button class="info" type="button">
                                 <span class="visually-hidden">Посмотреть дополнительную информацию</span>
@@ -329,7 +389,7 @@
                     </label>
 
                     <div class="order-adress">
-                        <label class="order-label" for="order-adress">Адрес
+                        <label class="order-label label-icon" for="order-adress">Адрес
                             <button class="info" type="button">
                                 <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                             </button>
@@ -400,6 +460,32 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal-container">
+        <div class="modal modal-feedback">
+            <button class="modal-close-button">
+                <span class="visually-hidden">Закрыть</span>
+            </button>
+            <section class="modal-content">
+              <h2 class="modal-title">Мы обязательно ответим вам!</h2>
+              <form class="modal-feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+                <p class="field-group">
+                    <label class="visually-hidden" for="feedback-name">Имя и фамилия</label>
+                    <input class="feedback-form-field" type="text" id="feedback-name" name="feedback-name" placeholder="Имя и фамилия">
+                </p>
+                <p class="field-group">
+                    <label class="visually-hidden" for="feedback-email">Email</label>
+                    <input class="feedback-form-field" type="email" id="feedback-email" name="feedback-email" placeholder="email@example.com">
+                </p>
+                <p class="field-group">
+                    <label class="visually-hidden" for="feedback-message">Сообщение</label>
+                    <textarea class="feedback-form-field area-form-field" type="text" id="feedback-message" name="feedback-message" placeholder="В свободной форме"></textarea>
+                </p>
+                <button class="btn btn-pink" type="submit">Отправить</button>
+              </form>
+            </section>
+        </div>
+    </div>
 </body>
 
 </html>
