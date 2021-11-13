@@ -337,7 +337,6 @@ body {
     background-color: rgba(252, 252, 252, 0.3);
     box-shadow: none;
     border: 2px solid #FCFCFC;
-    background-clip: padding-box;
     box-sizing: border-box;
     outline: none;
 }
