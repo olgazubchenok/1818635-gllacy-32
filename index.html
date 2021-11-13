@@ -6,6 +6,7 @@
     <title>HTML Academy: Глейси</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico">
 </head>
 
 <body>
@@ -17,14 +18,14 @@
 
             <nav class="navigation">
                 <ul class="navigation-list">
-                    <li class="navigation-item">
-                        <a class="navigation-link" href="catalog.html">Каталог</a>
-                        <div class="popover popover-catalog hidden-element">
-                            <div class="popover-catalog-content">
-                                <span class="popover-new-icecreem">
-                                    <a class="popover-new-icecreem-link" href="#">
-                                        Новинки</a></span>
+                    <li class="navigation-item popover-group">
+                        <a class="navigation-link popover-link" href="catalog.html">Каталог</a>
+                        <div class="popover popover-catalog">
                                 <ul class="popover-catalog-list">
+                                    <li class="popover-catalog-item popover-new-icecreem">
+                                        <a class="popover-new-icecreem-link popover-catalog-link" href="#">
+                                            Новинки</a>
+                                    </li>
                                     <li class="popover-catalog-item">
                                         <a class="popover-catalog-link" href="#">
                                             Сливочное</a></li>
@@ -38,7 +39,6 @@
                                         <a class="popover-catalog-link" href="#">
                                             Мелорин</a></li>
                                 </ul>
-                            </div>
                         </div>
                     </li>
                     <li class="navigation-item">
@@ -53,15 +53,16 @@
                     <a class="phone navigation-link" href="tel:88005558628">+7 800 555-86-28</a>
 
                     <div class="popover-group">
-                        <a class="search btn-light-pink navigation-link" href="#">
+                        <a class="search navigation-link popover-link" href="#">
                             <span class="visually-hidden">Поиск</span>
                         </a>
-                        <div class="popover popover-search hidden-element">
+                        
+                        <div class="popover popover-search">
                             <form class="popover-search-form" action="https://echo.htmlacademy.ru/" method="post">
                                 <label class="popover-search-label visually-hidden" for="popover-search">Поиск по сайту</label>
                                 <input type="text" id="popover-search" name="popover-search" placeholder="Поиск по сайту">
-                                <button class="popover-search-btn">
-                                    <svg class="popover-search-btn-icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <button class="popover-search-btn" type="button">
+                                    <svg class="popover-search-btn-icon" aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
                                             d="M12.8 4.14a.67.67 0 1 0-.94-.94L8 7.06 4.14 3.2a.67.67 0 1 0-.94.94L7.06 8 3.2 11.86a.67.67 0 1 0 .94.94L8 8.94l3.86 3.86a.67.67 0 1 0 .94-.94L8.94 8l3.86-3.86Z"
                                             fill="#2D3440" />
@@ -72,17 +73,17 @@
                     </div>
 
                     <div class="popover-group">
-                        <a class="entrance btn-light-pink navigation-link" href="#">
-                            <span class="navigation-link-login">Вход</span>
+                        <a class="entrance navigation-link popover-link" href="#">
+                            Вход
                         </a>
-                        <div class="popover popover-entrance hidden-element">
+                        <div class="popover popover-entrance">
                             <h2 class="entrance-title">Личный кабинет</h2>
                             <form class="popover-entrance-form" action="https://echo.htmlacademy.ru/" method="post">
                                 <label class="popover-entrance-label visually-hidden" for="popover-entrance-email">Email</label>
                                 <input type="email" id="popover-entrance-email" name="popover-entrance-email" placeholder="email@example.com" required>
                                 <label class="popover-entrance-label visually-hidden" for="popover-entrance-password">Пароль</label>
                                 <input type="password" id="popover-entrance-password" name="popover-entrance-password" required>
-                                <button class="btn btn-pink popover-entrance-btn" type="submit">Войти</button>
+                                <button class="btn btn-pink popover-entrance-btn" type="button">Войти</button>
                                 <div class="entrance-link-group">
                                     <a class="entrance-link" href="">Забыли пароль?</a>
                                     <a class="entrance-link" href="">Регистрация</a>
@@ -92,7 +93,7 @@
                     </div>
 
                     <div class="popover-group">
-                        <a class="cart navigation-link" href="#">
+                        <a class="cart navigation-link popover-link" href="#">
                             <svg class="navigation-icon" aria-hidden="true" focusable="false" width="18" height="18"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -102,7 +103,7 @@
                             <span class="navigation-link-login">Пусто</span>
                         </a>
                         <div class="popover popover-cart hidden-element">
-                            <h2 class="cart-title cart-title-empty">Ваша корзина пока пуста</h2>
+                            <p class="cart-title cart-title-empty">Ваша корзина пока пуста</p>
                         </div>
                     </div>
                 </div>
@@ -116,10 +117,10 @@
 
             <section class="slider">
                 <ul class="slider-list">
-                    <li class="slider-item strawberry-icecream">
+                    <li class="slider-item strawberry-icecream icecream current">
                         <div class="slider-container">
-                            <h2 class="slider-title">Нежный пломбир с клубничным джемом</h2>
-                            <p class="slider-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим
+                            <h2 class="slider-title">Нежный пломбир <br> с клубничным джемом</h2>
+                            <p class="slider-description">Натуральное мороженое из свежих сливок <br> и молока с вкуснейшим
                                 клубничным джемом – это идеальный десерт для всей семьи.</p>
                             <a class="btn" href="#">Заказать</a>
                         </div>
@@ -127,7 +128,7 @@
                             alt="Пломбир с клубничным джемом">
                     </li>
 
-                    <li class="slider-item banana-icecream visually-hidden">
+                    <li class="slider-item banana-icecream icecream">
                         <div class="slider-container">
                             <h2 class="slider-title">Сливочное мороженое со вкусом банана</h2>
                             <p class="slider-description">Сливочное мороженое с ярким банановым вкусом подарит вам
@@ -139,7 +140,7 @@
                             alt="Сливочное мороженое со вкусом банана">
                     </li>
 
-                    <li class="slider-item caramel-icecream visually-hidden">
+                    <li class="slider-item caramel-icecream icecream">
                         <div class="slider-container">
                             <h2 class="slider-title">Карамельный пломбир с маршмеллоу</h2>
                             <p class="slider-description">Необычный сладкий дессерт с карамельный топпингом и кусочками
@@ -149,6 +150,21 @@
                         </div>
                         <img class="slider-img" src="img/icecreem-yellow.png" width="306" height="507"
                             alt="Карамельный пломбир с маршмеллоу">
+                    </li>
+                </ul>
+
+                <ul class="mini-icecreem-list">
+                    <li class="mini-icecreem-item strawberry-icecream icecream current">
+                        <img class="mini-icecreem-img" src="img/mini-banana.png" width="100" height="150" alt="Сливочное мороженое со вкусом банана">
+                        <img class="mini-icecreem-img" src="img/mini-caramel.png" width="100" height="150" alt="Карамельный пломбир с маршмеллоу">
+                    </li>
+                    <li class="mini-icecreem-item banana-icecream icecream">
+                        <img class="mini-icecreem-img" src="img/mini-caramel.png" width="100" height="150" alt="Карамельный пломбир с маршмеллоу">
+                        <img class="mini-icecreem-img" src="img/mini-strawberry.png" width="100" height="150" alt="Пломбир с клубничным джемом">
+                    </li>
+                    <li class="mini-icecreem-item caramel-icecream icecream">
+                        <img class="mini-icecreem-img" src="img/mini-strawberry.png" width="100" height="150" alt="Пломбир с клубничным джемом">
+                        <img class="mini-icecreem-img" src="img/mini-banana.png" width="100" height="150" alt="Сливочное мороженое со вкусом банана">
                     </li>
                 </ul>
 
@@ -374,13 +390,15 @@
                         подтвердить заказ.</p>
 
                     <div class="order-date">
-                        <label class="order-label label-icon" for="order-date">
-                            Дата
+                        <div class="order-row">
+                            <label class="order-label" for="order-date">
+                                Дата
+                            </label>
                             <button class="info" type="button">
                                 <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                                <span class="tooltip">Введите дату удобную для доставки</span>
                             </button>
-                            
-                        </label>
+                        </div>
                         <input type="text" id="order-date" name="order-date" placeholder="01.04.2020">
                     </div>
 
@@ -389,11 +407,15 @@
                     </label>
 
                     <div class="order-adress">
-                        <label class="order-label label-icon" for="order-adress">Адрес
+                        <div class="order-row">
+                            <label class="order-label" for="order-adress">
+                                Адрес
+                            </label>
                             <button class="info" type="button">
                                 <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                                <span class="tooltip">Введите название улицы, дома и квартиры</span>
                             </button>
-                        </label>
+                        </div>
                         <input type="text" id="order-adress" name="order-adress"
                             placeholder="ул. Большая Конюшенная, 19/8">
                     </div>
@@ -479,7 +501,7 @@
                 </p>
                 <p class="field-group">
                     <label class="visually-hidden" for="feedback-message">Сообщение</label>
-                    <textarea class="feedback-form-field area-form-field" type="text" id="feedback-message" name="feedback-message" placeholder="В свободной форме"></textarea>
+                    <textarea class="feedback-form-field area-form-field" id="feedback-message" name="feedback-message" placeholder="В свободной форме"></textarea>
                 </p>
                 <button class="btn btn-pink" type="submit">Отправить</button>
               </form>
