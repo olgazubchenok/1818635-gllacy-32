@@ -168,19 +168,17 @@
 
     <main class="main-inner">
         <div class="wrapper">
-            <div class="pagination">
-                <ul class="pagination-list">
-                    <li class="pagination-item">
-                        <a class="pagination-link pagination-link-arrow" href="index.html">Главная</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a class="pagination-link pagination-link-arrow" href="#">Каталог</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a class="pagination-link pagination-current" href="#">Сливочное</a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-link breadcrumbs-link-arrow" href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-link breadcrumbs-link-arrow" href="#">Каталог</a>
+                </li>
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-link breadcrumbs-current" href="#">Сливочное</a>
+                </li>
+            </ul>
 
             <h1 class="page-title">Сливочное мороженое</h1>
 
@@ -214,8 +212,7 @@
                                 <label class="catalog-filter-label">
                                     <input class="catalog-filter-input" type="number" name="min-price" value="100">₽
                                 </label>
-                                <label class="catalog-filter-label">
-                                    &ndash; <input class="catalog-filter-input" type="number" name="max-price"
+                                <label class="catalog-filter-label">&ndash;<input class="catalog-filter-input" type="number" name="max-price"
                                         value="500">₽
                                 </label>
                             </div>
@@ -294,13 +291,13 @@
                                         checked>
                                 <svg class="mark-checkbox checkbox-icon" width="16"
                                     height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#a)">
+                                    <g clip-path="url(#b)">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
                                             d="M2.3 1.33a.96.96 0 0 0-.97.97v11.4a.96.96 0 0 0 .97.96h11.4a.96.96 0 0 0 .97-1V2.3a.91.91 0 0 0-.29-.68 1 1 0 0 0-.28-.23.97.97 0 0 0-.4-.06H2.3Zm13.54 13.21A2.3 2.3 0 0 1 13.7 16H2.3A2.3 2.3 0 0 1 0 13.7V2.3A2.3 2.3 0 0 1 1.46.16c.11-.1.27-.16.43-.16H13.7c.34 0 .65.04.94.17.28.12.5.31.69.5.48.48.67 1.06.67 1.63v11.8c0 .18-.06.33-.16.44Z"
                                             fill="#2D3440" />
                                     </g>
                                     <defs>
-                                        <clipPath id="a">
+                                        <clipPath id="b">
                                             <path fill="#fff" d="M0 0h16v16H0z" />
                                         </clipPath>
                                     </defs>
@@ -312,20 +309,20 @@
                                             fill="#2D3440" />
                                 </svg>
                                 <label class="control-label" for="sugar-filler">
-                                        сахарные присыпки
+                                    сахарные посыпки
                                 </label>
                             </li>
                             <li class="catalog-filter-item">
                                 <input class="visually-hidden control-input" type="checkbox" name="fruit" id="fruit-filler">
                                 <svg class="mark-checkbox checkbox-icon" width="16"
                                     height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#a)">
+                                    <g clip-path="url(#c)">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
                                             d="M2.3 1.33a.96.96 0 0 0-.97.97v11.4a.96.96 0 0 0 .97.96h11.4a.96.96 0 0 0 .97-1V2.3a.91.91 0 0 0-.29-.68 1 1 0 0 0-.28-.23.97.97 0 0 0-.4-.06H2.3Zm13.54 13.21A2.3 2.3 0 0 1 13.7 16H2.3A2.3 2.3 0 0 1 0 13.7V2.3A2.3 2.3 0 0 1 1.46.16c.11-.1.27-.16.43-.16H13.7c.34 0 .65.04.94.17.28.12.5.31.69.5.48.48.67 1.06.67 1.63v11.8c0 .18-.06.33-.16.44Z"
                                             fill="#2D3440" />
                                     </g>
                                     <defs>
-                                        <clipPath id="a">
+                                        <clipPath id="c">
                                             <path fill="#fff" d="M0 0h16v16H0z" />
                                         </clipPath>
                                     </defs>
@@ -344,13 +341,13 @@
                                 <input class="visually-hidden control-input" type="checkbox" name="syrup" id="syrup-filler">
                                 <svg class="mark-checkbox checkbox-icon" width="16"
                                     height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#a)">
+                                    <g clip-path="url(#d)">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
                                             d="M2.3 1.33a.96.96 0 0 0-.97.97v11.4a.96.96 0 0 0 .97.96h11.4a.96.96 0 0 0 .97-1V2.3a.91.91 0 0 0-.29-.68 1 1 0 0 0-.28-.23.97.97 0 0 0-.4-.06H2.3Zm13.54 13.21A2.3 2.3 0 0 1 13.7 16H2.3A2.3 2.3 0 0 1 0 13.7V2.3A2.3 2.3 0 0 1 1.46.16c.11-.1.27-.16.43-.16H13.7c.34 0 .65.04.94.17.28.12.5.31.69.5.48.48.67 1.06.67 1.63v11.8c0 .18-.06.33-.16.44Z"
                                             fill="#2D3440" />
                                     </g>
                                     <defs>
-                                        <clipPath id="a">
+                                        <clipPath id="d">
                                             <path fill="#fff" d="M0 0h16v16H0z" />
                                         </clipPath>
                                     </defs>
@@ -369,13 +366,13 @@
                                 <input class="visually-hidden control-input" type="checkbox" name="jam" id="jam-filler">
                                 <svg class="mark-checkbox checkbox-icon" width="16"
                                     height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#a)">
+                                    <g clip-path="url(#e)">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
                                             d="M2.3 1.33a.96.96 0 0 0-.97.97v11.4a.96.96 0 0 0 .97.96h11.4a.96.96 0 0 0 .97-1V2.3a.91.91 0 0 0-.29-.68 1 1 0 0 0-.28-.23.97.97 0 0 0-.4-.06H2.3Zm13.54 13.21A2.3 2.3 0 0 1 13.7 16H2.3A2.3 2.3 0 0 1 0 13.7V2.3A2.3 2.3 0 0 1 1.46.16c.11-.1.27-.16.43-.16H13.7c.34 0 .65.04.94.17.28.12.5.31.69.5.48.48.67 1.06.67 1.63v11.8c0 .18-.06.33-.16.44Z"
                                             fill="#2D3440" />
                                     </g>
                                     <defs>
-                                        <clipPath id="a">
+                                        <clipPath id="e">
                                             <path fill="#fff" d="M0 0h16v16H0z" />
                                         </clipPath>
                                     </defs>
@@ -401,7 +398,7 @@
             </section>
 
             <section class="product-card">
-                <h2 class="product-card">Сливочное морожение</h2>
+                <h2 class="visually-hidden">Сливочное морожение</h2>
                 <ul class="product-list">
                     <li class="product-item">
                         <a class="product-card-link" href="#">
