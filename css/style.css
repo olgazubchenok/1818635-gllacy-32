@@ -583,7 +583,7 @@ body {
 }
 
 .inst-btn {
-    background-image: url("../img/icon/instagram.svg");
+    background-image: url("../img/icon/inst.svg");
     background-repeat: no-repeat;
     background-size: 24px 24px;
     background-position: center;
@@ -1227,7 +1227,7 @@ body {
     margin: 0;
     padding: 0;
 
-    background-image: url("../img/icon/info.svg");
+    background-image: url("../img/icon/inform.svg");
     background-position: center;
     background-size: 14px 14px;
 
