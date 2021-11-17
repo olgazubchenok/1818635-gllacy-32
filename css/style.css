@@ -84,7 +84,7 @@ body {
 
     border-radius: 26px;
     border: 4px solid rgba(252, 252, 252, 0.4);
-    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
     background-clip: padding-box;
     outline: none;
 }
@@ -92,14 +92,14 @@ body {
 .btn:hover {
     background-color: rgba(252, 252, 252, 0.4);
     border: 4px solid #FCFCFC;
-    box-shadow: 0px 4px 15px rgba(133, 133, 133, 0.15);
+    box-shadow: 0 4px 15px rgba(133, 133, 133, 0.15);
     border-radius: 26px;
 }
 
 .btn:focus {
     background-color: #FCFCFC;
     border: 2px solid #2D3440;
-    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 
     margin: 2px 0 2px 2px;
 }
@@ -115,7 +115,7 @@ body {
     color: #FCFCFC;
     background-color: #FF2F64;
     border: 4px solid rgba(255, 47, 100, 0.3);
-    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
     border-radius: 26px;
     background-clip: padding-box;
     outline: none;
@@ -127,10 +127,10 @@ body {
     border: 4px solid #FF2F64;
 }
 
-.btn-pink:focus{
+.btn-pink:focus {
     background-color: #FF2F64;
     border: 2px solid #2D3440;
-    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .btn-pink:disabled {
@@ -1257,7 +1257,7 @@ body {
     padding: 40px;
     margin: 64px;
 
-    box-shadow: 0px 8px 16px rgba(45, 52, 64, 0.12);
+    box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
     border-radius: 8px;
     background-color: #FCFCFC;
 }
@@ -1425,7 +1425,7 @@ body {
     padding: 1px 7px;
 }
 
-.first-link-current path{
+.first-link-current path {
     fill: rgba(45, 52, 64, 0.2);
 }
 
@@ -1593,7 +1593,7 @@ body {
     outline: 2px solid #2D3440;
 } 
 
-.range-toggle:active{
+.range-toggle:active {
     background-color: #2D3440;
     border: 6px solid #2D3440;
 }
@@ -1623,7 +1623,7 @@ body {
     grid-column: 1/4;
 }
 
-.control-label  {
+.control-label {
     position: relative;
     display: block;
     padding-left: 24px;
@@ -1748,10 +1748,31 @@ body {
     font-weight: bold;
     font-size: 14px;
     line-height: 20px;
+    outline: none;
 }
 
+.catalog-filter-btn:hover {
+    background: #FCFCFC;
+    border: 2px solid rgba(252, 252, 252, 0.3);
+}
+
+.catalog-filter-btn:focus {
+    background: rgba(252, 252, 252, 0.3);
+    border: 2px solid #2D3440;
+}
+
+.catalog-filter-btn:disabled {
+    background: rgba(252, 252, 252, 0.3);
+    opacity: 0.4;
+    border: 2px solid #FCFCFC;
+}
+
+
+
+
+
 /* Подвал */
-.page-footer .wrapper{
+.page-footer .wrapper {
     display: flex;
 
     padding-top: 47px;
@@ -2057,7 +2078,7 @@ span.suppliers-info::before {
 
 .popover-entrance {
     visibility: hidden;
-    right: 0px;
+    right: 0;
     top: 42px;
     width: 420px;
     min-height: 350px;
@@ -2297,7 +2318,7 @@ span.suppliers-info::before {
     padding: 64px;
 
     background-color: #FCFCFC;
-    box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
+    box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
     border-radius: 8px;
 }
 
@@ -2377,7 +2398,7 @@ span.suppliers-info::before {
     border: 1px solid #B9B9B9;
     border-radius: 1px;
     color: #565C66;
-    box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.18);
+    box-shadow: 0 2px 12px rgba(173, 152, 143, 0.18);
 
     padding: 10px 8px;
     text-align: start;
