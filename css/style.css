@@ -39,7 +39,18 @@ body {
     margin: 0;
 
     color: #2D3440;
+}
+
+.bg-pink {
     background-color: #FEAFC3;
+}
+
+.bg-blue {
+    background-color: #69A9FF;
+}
+
+.bg-yellow {
+    background-color: #FCC850;
 }
 
 .wrapper {
@@ -166,7 +177,6 @@ body {
 .navigation-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 
     margin: 0;
     padding: 0;
@@ -176,21 +186,18 @@ body {
 }
 
 .navigation-item {
-    margin: auto;
     position: relative;
 
     border-radius: 26px;
 }
 
 .navigation-link {
-    display: block;
-
-    padding: 6px 14px;
+    display: inline-block;
+    padding: 8px 16px;
 
     color: #2D3440;
     text-decoration: none;
     border-radius: 26px;
-    border: 2px solid #FEAFC3;
 }
 
 .entrance {
@@ -210,22 +217,26 @@ body {
 .navigation-link:hover {
     background-color: rgba(252, 252, 252, 0.4);
     border: 2px solid rgba(252, 252, 252, 0);
+    padding: 6px 14px;
 }
 
 .navigation-link:focus {
     background-color: rgba(252, 252, 252, 0.4);
     outline: none;
     border: 2px solid #2D3440;
+    padding: 6px 14px;
 }
 
 .navigation-link:active {
     background-color: #FCFCFC;
     border: 2px solid #FCFCFC;
+    padding: 6px 14px;
 }
 
 .navigation-link.current {
     background-color: #FF4A78;
     border: 2px solid #FF4A78;
+    padding: 6px 14px;
 }
 
 .navigation-user {
@@ -279,8 +290,7 @@ body {
     font-weight: bold;
     font-size: 16px;
 
-    background-color: #FEAFC3;
-    border: 2px solid #FEAFC3;
+    background-color: inherit;
 }
 
 .search.navigation-link {
@@ -1091,6 +1101,7 @@ body {
     background-repeat: no-repeat;
     background-size: 1170px 534px;
     border-radius: 16px;
+    background-color: #F5F5F5;
 
     margin-bottom: 80px;
 }
@@ -1110,8 +1121,9 @@ body {
 
 .order-description {
     margin: 0;
-    margin-bottom: 163px;
+    margin-bottom: auto;
     padding: 0;
+    padding-bottom: 163px;
     color: #565C66;
 }
 
@@ -1122,7 +1134,7 @@ body {
     gap: 16px;
     width: 500px;
 
-    margin: 64px 64px 64px 135px;
+    margin: 64px 64px auto 135px;
     padding: 40px;
     padding-bottom: 38px;
 
@@ -1246,10 +1258,11 @@ body {
 .contacts {
     background-image: url("../img/address-back.jpg");
     background-repeat: no-repeat;
-    background-size: 1170px 492px;
+    background-size: 1170px 495px;
+    background-color: #E1BEC7;
 
     border-radius: 16px;
-    height: 492px;
+    min-height: 492px;
 }
 
 .contacts-inner {
@@ -1667,6 +1680,14 @@ body {
     background-color: #FCFCFC;
 }
 
+.control-input[type="radio"]:focus + .control-mark {
+    border-color: #FCFCFC;
+}
+
+.control-input[type="radio"]:checked:focus + .control-mark::before {
+    background-color: #FCFCFC;
+}
+
 .control-input[type="radio"]:disabled + .control-mark {
     border-color: rgba(45, 52, 64, 0.4);
 }
@@ -1703,6 +1724,11 @@ body {
     fill: #FCFCFC;
 }
 
+.control-input[type="checkbox"]:focus ~ .checkbox-icon path,
+.control-input[type="checkbox"]:checked:focus ~ .checkbox-icon path {
+    fill: #FCFCFC;
+}
+
 .control-input[type="checkbox"]:disabled ~ .checkbox-icon path,
 .control-input[type="checkbox"]:checked:disabled ~ .checkbox-icon path {
     fill: rgba(45, 52, 64, 0.4);
@@ -1711,7 +1737,6 @@ body {
 .catalog-filter-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 
     margin: 0;
     padding: 8px 16px;
@@ -1725,6 +1750,11 @@ body {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
+    margin-right: 16px;
+}
+
+.catalog-filter-item:last-child {
+    margin: 0;
 }
 
 .grid-row{
@@ -1776,7 +1806,9 @@ body {
     display: flex;
 
     padding-top: 47px;
+}
 
+.footer-line {
     border-top: 1px solid rgba(252, 252, 252, 0.3);
 }
 
